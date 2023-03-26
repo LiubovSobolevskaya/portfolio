@@ -77,13 +77,11 @@ header nav ul li {
 .links {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content:space-around;
 }
 .links .my-work-card{
     width: 50%;
-    border-radius: 10px;  
-    width: 400px;
-    height: 400px;
+
 }
 .links .my-work-card img{
     width: 400px;
@@ -100,7 +98,6 @@ header nav ul li {
 .links .rest-of-work .my-work-card{
     width: 50%;
     height: 50%;
-    border-radius: 10px;  
 }
 
 .links .rest-of-work .my-work-card img{
@@ -115,6 +112,24 @@ header nav ul li {
     transform: translateY(-5px); 
 }
 
+
+.overlay {
+    position:relative; 
+    bottom: 0; 
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.5); 
+    color: #f1f1f1; 
+    transition: .5s ease;
+    opacity:0;
+    color: white;
+    font-size: 20px;
+    padding: 20px 0px; 
+    text-align: center;
+}
+
+.my-work-card:hover .overlay {
+    opacity: 1;
+}  
     
 @media screen and (max-width: 992px) {
     .main-picture {
