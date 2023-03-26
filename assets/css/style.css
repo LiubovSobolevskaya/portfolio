@@ -78,12 +78,11 @@ header nav ul li {
     display: flex;
     flex-wrap: wrap;
     justify-content:space-around;
+} 
+.links .my-first-work-card{
+    /* width: 50%;  */
 }
-.links .my-work-card{
-    width: 50%;
-
-}
-.links .my-work-card img{
+.links .my-first-work-card img{
     width: 400px;
     height: 400px;
     box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.3);  
@@ -91,13 +90,14 @@ header nav ul li {
 }
 
 .links .rest-of-work{
-    width: 50%; 
+    /* width: 40%;  */
     display: flex;
     flex-wrap: wrap;
-}
+    justify-content:space-around
+} 
 .links .rest-of-work .my-work-card{
     width: 50%;
-    height: 50%;
+    height: 50%; 
 }
 
 .links .rest-of-work .my-work-card img{
@@ -112,6 +112,9 @@ header nav ul li {
     transform: translateY(-5px); 
 }
 
+.my-first-work-card:hover {
+    transform: translateY(-5px); 
+}
 
 .overlay {
     position:relative; 
@@ -130,36 +133,36 @@ header nav ul li {
 .my-work-card:hover .overlay {
     opacity: 1;
 }  
-    
+.my-first-work-card:hover .overlay {
+    opacity: 1;
+}  
+/*     
 @media screen and (max-width: 992px) {
-    .main-picture {
-    width: 100%;
-    }
+
     .card {
     width: 100%;
     }
-    .my-work-card {
-    width: 50%;
+    
+    .my-first-work-card{
+        width: 100%;
     }
+    .my-work-card{
+        width: 100%;
+    }
+    
 }
 
 
-
 @media screen and (max-width: 768px) {
+    .my-first-work-card{
+        width: 100%;
+    }
 
     .my-work-card{
         width: 100%
     }
-}
-   
-
-
-
-
-
-
-
-
+} */
+    
 
 
 
