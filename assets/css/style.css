@@ -178,6 +178,10 @@ header nav ul li {
     transform: translateY(-5px); 
 }
 
+#contact
+{
+    padding:25px;
+}
 
 #contact ul {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -187,6 +191,7 @@ header nav ul li {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    margin: 10px;
     
 
 }
