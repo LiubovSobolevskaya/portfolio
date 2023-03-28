@@ -10,6 +10,7 @@ padding: 0;
     text-align: center;
     color: rgb(14, 17, 230);
     text-decoration: none;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 body {
     background: linear-gradient(180deg, var(--first-color) 0%, var(--second-color) 35%, var(--third-color) 100%);
@@ -18,7 +19,6 @@ body {
 header {
     text-align: left;
     padding-bottom: 20px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background-color: var(--third-color);
 }
     
@@ -31,7 +31,6 @@ header h1 {
 header nav {
     margin-right: 20px;
     float: right;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 20px;
 }
     
@@ -50,12 +49,13 @@ header nav ul li {
 
 .luba{
     display: grid;
-    justify-content: space-around;
+    justify-content: space-evenly;
     margin: 15px;
 }
 
 
 .main-picture {
+    align-self: center;
     position: relative;
     grid-column-start: 1;
     grid-column-end: 1;
@@ -63,7 +63,7 @@ header nav ul li {
     grid-row-end: 1; 
     width: 300px;
     border-radius: 10px;  
-    margin: 15px;
+    margin: 15px auto;
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3); 
     
 }
@@ -184,7 +184,6 @@ header nav ul li {
 }
 
 #contact ul {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 20px;
     list-style-type: none;
     text-decoration: none;
@@ -208,7 +207,6 @@ header nav ul li {
 footer{
     padding: 10px;
     clear: both;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     text-align: center;
     background-color: var(--first-color);
 }
@@ -251,14 +249,23 @@ footer{
     }
 
     .card{
-    grid-column-start: 1;
-    grid-column-end: 1;
-    grid-row-start: 2;
-    grid-row-end: 2; 
+        grid-column-start: 1;
+        grid-column-end: 1;
+        grid-row-start: 2;
+        grid-row-end: 2; 
+    }
 
+    body{
+        background: linear-gradient(180deg, var(--third-color) 0%, var(--second-color) 35%, var(--first-color) 100%);
+    }
+    header{
+        background-color: var(--first-color);
+    }
+    footer
+    {
+        background-color: var(--third-color);
+    }
 }
 
-}
-  
 
   
