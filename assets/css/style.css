@@ -17,8 +17,9 @@ body {
     
 header {
     text-align: left;
-    padding-bottom: 23px;
+    padding-bottom: 20px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: var(--third-color);
 }
     
 header h1 {
@@ -44,29 +45,37 @@ header nav ul li {
     margin-left: 25px;
     color: white; 
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); 
-}
+} 
   
 
 .luba{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
+    display: grid;
+    justify-content: space-around;
+    margin: 15px;
 }
 
+
 .main-picture {
-    display: inline-block;
-    border-radius: 10px;
-    margin: 5px 15px;
-    max-width: 300px;
+    position: relative;
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 1;
+    grid-row-end: 1; 
+    width: 300px;
+    border-radius: 10px;  
+    margin: 15px;
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3); 
-    vertical-align: middle;
+    
 }
+
 .card
 {
-    max-width: 800px;
-    display: inline-block;
-    vertical-align: middle;
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 1; 
 }
+
 .card p{
     text-align: left;
     margin: 10px;
@@ -74,66 +83,89 @@ header nav ul li {
     border-radius: 10px;
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3); 
     color: black;
+    padding: 10px;
 }
 
+.card p:hover {
+    box-shadow: inset 0px 0px 8px white, 0 0 15px white;
+}
 
 #applications {
     margin: 5px 15px;
 }
     
-.links {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+.grid-container {
+    display: grid;
+    gap: 0px;
+    justify-content: space-evenly;
 } 
 
-.links .my-first-work-card .img_container img{
+.grid-container  .img_container1{
+    grid-column: 1 ;
+    grid-row: 1 / span 2;
+
+}
+.grid-container  .img_container1 img{
+    width: 400px;
+    height: 400px;
+}
+
+.grid-container .img_container2{
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 1;
+
+}
+
+.grid-container .img_container3{
+    grid-column-start: 3;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 1;
+}
+
+.grid-container .img_container4{
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 2;
+    width: 200px;
+    height: 200px;
+}
+
+
+.grid-container .img_container5{
+    grid-column-start: 3;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 2;
+    width: 200px;
+    height: 200px;
+}
+
+.grid-container > section img{
+    width: 200px;
+    height: 200px;
+    box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.3);  
+    transition: all 0.3s ease-in-out; 
+} 
+
+.grid-container .img_container1 img{
     width: 400px;
     height: 400px;
     box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.3);  
     transition: all 0.3s ease-in-out; 
 }
 
-.links .rest-of-work{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content:space-around
-} 
-
-.links .rest-of-work .my-work-card{
-    width: 50%;
-    height: 50%; 
-}
-
-
-.links .my-work-card .img_container{
+.grid-container > section{
     position: relative;
     text-align: center;
 }
 
-.links .my-first-work-card .img_container{
-    position: relative;
-    text-align: center;
-}
-
-.links .my-work-card .img_container .app_title{
+.grid-container > section .app_title{
     text-align: center;
     color: white;
-}
-.links .my-first-work-card .img_container .app_title{
-    text-align: center;
-    color: white;
-}
-.links .my-work-card .img_container img{
-    width: 200px;
-    height: 200px;
-    box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.3);  
-    transition: all 0.3s ease-in-out; 
-}
-
-.links .my-work-card .img_container{
-    width: 200px;
-    height: 200px;
 }
 
 .app_title {
@@ -142,14 +174,10 @@ header nav ul li {
     left: 16px;
 }
 
-.my-work-card .img_container:hover {
+.grid-container section:hover {
     transform: translateY(-5px); 
 }
 
-.my-first-work-card .img_container:hover {
-    transform: translateY(-5px); 
-}
- 
 
 #contact ul {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -179,5 +207,53 @@ footer{
     text-align: center;
     background-color: var(--first-color);
 }
+
+@media screen and (max-width: 768px) {
+    
+   
+    .grid-container  .img_container1{
+        grid-column:  1 / span 2 ;
+        grid-row: 1;
+
+    }
+    .grid-container .img_container2{
+        grid-column-start: 1;
+        grid-column-end: 1;
+        grid-row-start: 2;
+        grid-row-end: 2;
+    
+    }
+    .grid-container .img_container3{
+        grid-column-start: 2;
+        grid-column-end: 2;
+        grid-row-start: 2;
+        grid-row-end: 2;
+    
+    }
+    .grid-container .img_container4{
+        grid-column-start: 1;
+        grid-column-end: 1;
+        grid-row-start: 3;
+        grid-row-end: 3;
+    
+    }
+    .grid-container .img_container5{
+        grid-column-start: 2;
+        grid-column-end: 2;
+        grid-row-start: 3;
+        grid-row-end: 3;
+    
+    }
+
+    .card{
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 2;
+    grid-row-end: 2; 
+
+}
+
+}
+  
 
   
