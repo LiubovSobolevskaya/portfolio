@@ -15,7 +15,7 @@ padding: 0;
 body {
     background: linear-gradient(180deg, var(--first-color) 0%, var(--second-color) 35%, var(--third-color) 100%);
 }
-    
+
 header {
     text-align: left;
     padding-bottom: 20px;
@@ -47,16 +47,13 @@ header nav ul li {
 } 
   
 
-.luba{
+.developers-info{
     display: grid;
     justify-content: space-evenly;
     margin: 15px;
 }
 
-
 .main-picture {
-    align-self: center;
-    position: relative;
     grid-column-start: 1;
     grid-column-end: 1;
     grid-row-start: 1;
@@ -68,7 +65,7 @@ header nav ul li {
     
 }
 
-.card
+#about-me
 {
     grid-column-start: 2;
     grid-column-end: 2;
@@ -76,7 +73,7 @@ header nav ul li {
     grid-row-end: 1; 
 }
 
-.card p{
+#about-me p{
     text-align: left;
     margin: 10px;
     background: rgb(249, 220, 224);
@@ -86,7 +83,7 @@ header nav ul li {
     padding: 10px;
 }
 
-.card p:hover {
+#about-me p:hover {
     box-shadow: inset 0px 0px 8px white, 0 0 15px white;
 }
 
