@@ -2,7 +2,7 @@
 Module 2 Challenge 
 
 
-[The link to the deployed page](https://liubovsobolevskaya.github.io/portfolio)
+[The link to the deployed page](https://liubovsobolevskaya.github.io/portfolio/)
 _______________________
 
 
@@ -24,10 +24,9 @@ __________________________
 * [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS)      
 * [Git](https://git-scm.com/)     
 
-## Mock-Up
+## Web application's appearance and functionality
 
-Here is the web application's appearance and functionality:
-![](./assets/readme_img/02-advanced-css-challenge-demo.gif)
+![](./assets/readme_img/MyWebsiteGif.gif)
 
 ## Author Info
 
