@@ -96,6 +96,9 @@ header nav ul li {
     margin: 5px 15px;
 }
 
+#applications h2{
+    margin: 5px 15px;
+}
 .grid-container {
     display: grid;
     gap: 0px;
@@ -154,7 +157,7 @@ header nav ul li {
 } 
 
 .grid-container .img_container1 img{
-    width: 400px;
+    width: 600px;
     height: 400px;
     box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.3);  
     transition: all 0.3s ease-in-out; 
