@@ -30,8 +30,8 @@ __________________________
 
 ## Author Info
 
-### Liubov Sobolevkaya
-* [LinkedIn](https://www.linkedin.com/in/liubov-sobolevskaya-45756a101/)
+### Liubov Sobolevskaya
+* [LinkedIn](https://www.linkedin.com/in/liubov-sobolevskaya/)
 * [Github](https://github.com/LiubovSobolevskaya)
 * [Kaggle](https://www.kaggle.com/lyubovsobolevskaya)
 
